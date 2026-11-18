@@ -1,0 +1,39 @@
+# Segredos / Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+oauth_credentials.json
+*_token.json
+token.json
+secrets/
+
+# Bancos de dados e backups / Databases and backups
+*.db
+*.sqlite
+*.sqlite3
+backups/
+*.bak
+
+# Dependências e builds / Dependencies and builds
+node_modules/
+dist/
+build/
+
+# Logs e temporários / Logs and temp files
+*.log
+tmp/
+temp/
+
+# Sistema e editores / OS and editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Contexto preenchido por IA (descomente se não quiser versionar o seu)
+# AI_CONTEXT.md
+# AI_CONTEXT.en.md

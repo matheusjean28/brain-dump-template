@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title>context-baton — como funciona</title>
+  <defs>
+    <marker id="aGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker>
+    <marker id="aRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ef4444"/></marker>
+    <marker id="aAmber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker>
+    <marker id="aGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker>
+  </defs>
+
+  <rect width="960" height="560" fill="#ffffff"/>
+  <text x="480" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#1f2937">context-baton — como funciona</text>
+
+  <!-- lanes -->
+  <rect x="30" y="60" width="270" height="420" rx="12" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="165" y="84" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">Sessão 1 · IA 1</text>
+  <rect x="660" y="60" width="270" height="420" rx="12" fill="#f0fdf4" stroke="#86efac"/>
+  <text x="795" y="84" text-anchor="middle" font-size="14" font-weight="700" fill="#15803d">Sessão 2 · IA 2</text>
+
+  <!-- arrows (behind boxes) -->
+  <line x1="165" y1="174" x2="165" y2="228" stroke="#6b7280" stroke-width="2" marker-end="url(#aGray)"/>
+  <line x1="165" y1="294" x2="165" y2="348" stroke="#6b7280" stroke-width="2" marker-end="url(#aGray)"/>
+  <polyline points="270,382 480,382 480,322" fill="none" stroke="#ef4444" stroke-width="2" marker-end="url(#aRed)"/>
+  <line x1="270" y1="262" x2="368" y2="262" stroke="#d97706" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#aAmber)"/>
+  <polyline points="480,230 480,142 688,142" fill="none" stroke="#16a34a" stroke-width="2" marker-end="url(#aGreen)"/>
+  <line x1="795" y1="174" x2="795" y2="228" stroke="#6b7280" stroke-width="2" marker-end="url(#aGray)"/>
+  <line x1="795" y1="294" x2="795" y2="348" stroke="#6b7280" stroke-width="2" marker-end="url(#aGray)"/>
+
+  <!-- arrow labels -->
+  <rect x="336" y="368" width="78" height="20" fill="#ffffff"/>
+  <text x="375" y="383" text-anchor="middle" font-size="12" fill="#b91c1c">grava tudo</text>
+  <rect x="298" y="252" width="52" height="20" fill="#ffffff"/>
+  <text x="324" y="267" text-anchor="middle" font-size="12" fill="#92400e">atualiza</text>
+  <rect x="584" y="132" width="24" height="20" fill="#ffffff"/>
+  <text x="596" y="147" text-anchor="middle" font-size="12" fill="#15803d">lê</text>
+
+  <!-- central file -->
+  <path d="M370,230 H572 L590,248 V320 H370 Z" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <path d="M572,230 V248 H590" fill="none" stroke="#d97706" stroke-width="1.5"/>
+  <text x="480" y="270" text-anchor="middle" font-size="14" font-weight="700" fill="#78350f">AI_CONTEXT.md</text>
+  <text x="480" y="292" text-anchor="middle" font-size="13" fill="#78350f">memória compartilhada</text>
+
+  <!-- left boxes -->
+  <rect x="60" y="110" width="210" height="64" rx="8" fill="#ffffff" stroke="#3b82f6"/>
+  <text x="165" y="138" text-anchor="middle" font-size="13" fill="#1f2937">1. Lê o AI_CONTEXT.md</text>
+  <text x="165" y="156" text-anchor="middle" font-size="13" fill="#1f2937">no início da sessão</text>
+
+  <rect x="60" y="230" width="210" height="64" rx="8" fill="#ffffff" stroke="#3b82f6"/>
+  <text x="165" y="258" text-anchor="middle" font-size="13" fill="#1f2937">2. Trabalha e atualiza</text>
+  <text x="165" y="276" text-anchor="middle" font-size="13" fill="#1f2937">o arquivo a cada marco</text>
+
+  <rect x="60" y="350" width="210" height="64" rx="8" fill="#fee2e2" stroke="#ef4444"/>
+  <text x="165" y="378" text-anchor="middle" font-size="13" fill="#7f1d1d">3. Tokens acabando (~10–15%)</text>
+  <text x="165" y="396" text-anchor="middle" font-size="13" fill="#7f1d1d">Preenche todas as seções</text>
+
+  <!-- right boxes -->
+  <rect x="690" y="110" width="210" height="64" rx="8" fill="#ffffff" stroke="#22c55e"/>
+  <text x="795" y="138" text-anchor="middle" font-size="13" fill="#1f2937">4. Nova sessão:</text>
+  <text x="795" y="156" text-anchor="middle" font-size="13" fill="#1f2937">lê o AI_CONTEXT.md</text>
+
+  <rect x="690" y="230" width="210" height="64" rx="8" fill="#ffffff" stroke="#22c55e"/>
+  <text x="795" y="258" text-anchor="middle" font-size="13" fill="#1f2937">5. Confere se o estado real</text>
+  <text x="795" y="276" text-anchor="middle" font-size="13" fill="#1f2937">bate com o arquivo</text>
+
+  <rect x="690" y="350" width="210" height="64" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="795" y="378" text-anchor="middle" font-size="13" fill="#14532d">6. Continua a partir de</text>
+  <text x="795" y="396" text-anchor="middle" font-size="13" fill="#14532d">“Próximos passos”</text>
+
+  <!-- warning -->
+  <rect x="180" y="496" width="600" height="38" rx="8" fill="#fef2f2" stroke="#fca5a5"/>
+  <text x="480" y="520" text-anchor="middle" font-size="12" fill="#991b1b">🔒 Nunca grave segredos no arquivo: use &lt;placeholders&gt; e diga onde o valor real fica (ex.: .env)</text>
+</svg>
